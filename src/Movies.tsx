@@ -1,12 +1,14 @@
 import data from './MovieData.json';
+import React from 'react';
+import './App.css';
 
 const MovieData = data.MovieData;
 
 function MovieList() {
   return (
-    <>
-      <div>
-        <h3>Joel Hilton's Movie Collection</h3>
+    <div>
+      <div className="margined">
+        <h2>Movie List</h2>
       </div>
       <table className="table table-striped">
         <thead>
@@ -32,7 +34,7 @@ function MovieList() {
           ))}
         </tbody>
       </table>
-    </>
+    </div>
   );
 }
 
